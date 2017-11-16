@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cat_circle">
+        <activity android:name=".cat_circle.cat_circle_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".cat_circle.cat_circle_commend"></activity>
+        <activity android:name=".cat_circle.cat_circle_focus"></activity>
+        <activity android:name=".cat_circle.cat_circle_nearby"></activity>
+        <activity android:name=".cat_circle.cat_circle_new"></activity>
     </application>
 
 </manifest>
