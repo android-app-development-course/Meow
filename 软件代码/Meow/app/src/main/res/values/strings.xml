@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Meow</string>
+    <string name="focus">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="catcyc">猫圈</string>
+    <string name="n1">4</string>
+    <string name="n2">2</string>
+    <string name="n3">0</string>
+    <string name="mycat">我的猫咪</string>
+    <string name="mynew">我的消息</string>
+    <string name="myfish">我的小鱼干</string>
+    <string name="mymissingcat">我的寻猫启事</string>
+    <string name="myfavorite">我的收藏</string>
+    <string name="github_url">https://github.com/android-app-development-course/Meow</string>
+    <string name="share_title">Meow</string>
+</resources>

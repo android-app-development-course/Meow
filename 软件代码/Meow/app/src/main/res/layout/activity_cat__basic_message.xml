@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.Cat.Cat_BasicMessage">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_catPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!--分割线-->
+    <TextView
+        android:id="@+id/tv_divider1"
+        android:layout_width="5dip"
+        android:layout_height="300dip"
+        android:layout_below="@+id/iv_catPhoto"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_divider2"
+        android:layout_width="300dip"
+        android:layout_height="5dip"
+        android:layout_below="@+id/iv_catPhoto"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:id="@+id/ll_basicMessage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv_divider2"
+        android:layout_toRightOf="@+id/tv_divider1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_catID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_catPhoto"
+            android:layout_marginBottom="15dp"
+            android:text="ID:233333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catID"
+            android:layout_marginBottom="15dp"
+            android:text="昵称:瓜皮"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_catType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catName"
+            android:layout_marginBottom="15dp"
+            android:text="品种：中华田园猫"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_catSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catType"
+            android:layout_marginBottom="15dp"
+            android:text="性别：雌性"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_catPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catSex"
+            android:layout_marginBottom="15dp"
+            android:text="地点：华师西区"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

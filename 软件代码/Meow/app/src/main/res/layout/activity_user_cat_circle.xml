@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.User.userCatCircle">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_Background"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/ll_userMessage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="瓜皮的id酱"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_userCatCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_userMessage"
+        android:layout_margin="5dp"
+        android:divider="#ffcccc"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+</RelativeLayout>

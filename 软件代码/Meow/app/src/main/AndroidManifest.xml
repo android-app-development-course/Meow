@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meow">
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat.Cat"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat.Cat_BasicMessage"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat.Cat_DailyFeed"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat.Cat_UserComment"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".HomePage.HomePage"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".User.myself"
+            android:launchMode="singleTask" />
+        <activity android:name=".HomePage.home_news" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_commend"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_nearby"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_new"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_focus"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_main"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".FindCat.FindCatMain"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".FindCat.findCat_Found"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".FindCat.findCat_Lose"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ScanCode.scanCode"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Cat_Circle.cat_circle_release"
+            android:launchMode="singleTask" />
+        <activity android:name=".FindCat.findCat_Found$findCatFoundRelease" />
+        <activity android:name=".FindCat.findCatFoundRelease" />
+        <activity android:name=".User.userCatCircle" />
+        <activity android:name=".Cat.CatUserCommentRelease" />
+        <activity android:name=".User.myself_one" />
+        <activity android:name=".User.myself_new"></activity>
+    </application>
+
+</manifest>

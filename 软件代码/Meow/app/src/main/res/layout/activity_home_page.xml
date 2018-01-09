@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.HomePage.HomePage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/toolbar">
+
+        </com.youth.banner.Banner>
+
+
+        <LinearLayout
+            android:id="@+id/ll_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/banner"
+            android:layout_marginTop="20dp">
+
+            <!--第一行按钮-->
+            <LinearLayout
+                android:id="@+id/ll_function1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center">
+
+                <!--想领养-->
+                <LinearLayout
+                    android:id="@+id/ll_wantToAdopt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_wantToAdopt"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/want_to_adopt"/>
+
+                    <TextView
+                        android:id="@+id/tv_wantToAdopt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="想领养"/>
+
+                </LinearLayout>
+
+                <!--找组织-->
+                <LinearLayout
+                    android:id="@+id/ll_findOrganization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_findOrganization"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/find_organization"/>
+
+                    <TextView
+                        android:id="@+id/tv_findOrganization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找组织"/>
+
+                </LinearLayout>
+
+                <!--去众筹-->
+                <LinearLayout
+                    android:id="@+id/ll_donate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_donate"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/donate"/>
+
+                    <TextView
+                        android:id="@+id/tv_donate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="去众筹"/>
+
+                </LinearLayout>
+
+                <!--看教程-->
+                <LinearLayout
+                    android:id="@+id/ll_lookTutorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_lookTutorial"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/look_tutorial"/>
+
+                    <TextView
+                        android:id="@+id/tv_lookTutorial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="看教程"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--第二行按钮-->
+            <LinearLayout
+                android:id="@+id/ll_function2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <!--新猫猫-->
+                <LinearLayout
+                    android:id="@+id/ll_newCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_newCat"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/new_cat"/>
+
+                    <TextView
+                        android:id="@+id/tv_newCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新猫猫"/>
+
+                </LinearLayout>
+
+                <!--更多-->
+                <LinearLayout
+                    android:id="@+id/ll_moreFunction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_moreFunction"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/more_function"/>
+
+                    <TextView
+                        android:id="@+id/tv_moreFunction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_function"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="3"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="为你推荐❤"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="3"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/ll_divider">
+
+            <VideoView
+                android:id="@+id/vv_video"
+                android:layout_width="130dp"
+                android:layout_height="80dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_videotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/vv_video">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一只猫的生活-动画短片"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_play"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/play" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1万"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_fish"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@mipmap/fish" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="666"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_star"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="666"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6666</color>
+    <color name="colorPrimaryDark">#ff6666</color>
+    <color name="colorAccent">#FFcccc</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLookforMessage">#fff2f2</color>
+    <color name="colorFoundMessage">#f0fff5</color>
+    <color name="colortitle">#505050</color>
+</resources>

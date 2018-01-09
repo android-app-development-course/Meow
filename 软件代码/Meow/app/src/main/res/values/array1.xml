@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="品种">
+        <item>中华田园猫</item>
+        <item>波斯猫 </item>
+        <item>美国短毛猫</item>
+        <item>英国短毛猫</item>
+        <item>埃及猫</item>
+    </string-array>
+</resources>

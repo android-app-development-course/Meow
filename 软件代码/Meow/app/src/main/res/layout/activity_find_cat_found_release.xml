@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.FindCat.findCatFoundRelease">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/et_losePlace"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:gravity="left|center"
+        android:hint="丢失地点..."
+        android:textSize="16sp"
+        android:textColor="@color/colortitle"/>
+
+    <TextView
+        android:id="@+id/tv_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/et_losePlace"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_catType"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/et_losePlace"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:gravity="left|center"
+        android:hint="猫咪种类..."
+        android:textSize="16sp"
+        android:textColor="@color/colortitle"/>
+
+    <TextView
+        android:id="@+id/tv_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/et_catType"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_catSex"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/et_catType"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:gravity="left|center"
+        android:hint="性别..."
+        android:textSize="16sp"
+        android:textColor="@color/colortitle"/>
+
+    <TextView
+        android:id="@+id/tv_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/et_catSex"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/et_catSex"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:hint="编辑找猫信息..."
+        android:textSize="16sp"
+        android:textColor="@color/colortitle"/>
+
+    <LinearLayout
+        android:id="@+id/ll_addPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_addPhoto1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_add_photo" />
+
+        <ImageView
+            android:id="@+id/iv_addPhoto2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_add_photo"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/ll_addPhoto"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_release"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_divider"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/contact_button"
+        android:text="发送"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+</RelativeLayout>

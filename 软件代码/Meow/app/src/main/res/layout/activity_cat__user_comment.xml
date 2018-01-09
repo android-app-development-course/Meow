@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.Cat.Cat_UserComment">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_topComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_topBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffaaaa"
+            android:text="    置顶"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"/>
+
+        <ListView
+            android:id="@+id/lv_catTopComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:divider="#d9d9d9"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_userComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_topComment"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_commentBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffaaaa"
+            android:text="    用户评论"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"/>
+
+        <ListView
+            android:id="@+id/lv_catUserComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:divider="#d9d9d9"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

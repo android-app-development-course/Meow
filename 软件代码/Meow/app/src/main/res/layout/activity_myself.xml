@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meow.User.myself">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/avatarbackground"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/ll_userMessage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="瓜皮的id酱"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_userMessage"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/focus"
+            android:textSize="20sp"
+            tools:text="关注" />
+
+        <TextView
+            android:id="@+id/focusnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/n1"
+            android:textSize="20sp"
+            tools:text="4" />
+
+        <TextView
+            android:id="@+id/fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/fans"
+            android:textSize="20sp"
+            tools:text="粉丝" />
+
+        <TextView
+            android:id="@+id/fansnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/n2"
+            android:textSize="20sp"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/tv_catCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/catcyc"
+            android:textSize="20sp"
+            tools:text="猫圈" />
+
+        <TextView
+            android:id="@+id/tv_catCircleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/n3"
+            android:textSize="20sp"
+            tools:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/L_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/mynew"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/news"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/mynew"
+            android:textSize="16sp"
+            android:textColor="#a7a7a7"/>
+
+        <Button
+            android:id="@+id/mycat"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/cat"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/mycat"
+            android:textSize="16sp"
+            android:textColor="#a7a7a7" />
+
+        <Button
+            android:id="@+id/myfish"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/fish"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/myfish"
+            android:textSize="16sp"
+            android:textColor="#a7a7a7"/>
+
+        <Button
+            android:id="@+id/mymissingcat"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/cat"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:text="@string/mymissingcat"
+            android:textColor="#a7a7a7"/>
+
+        <Button
+            android:id="@+id/myfavorite"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/collect"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/myfavorite"
+            android:textSize="16sp"
+            android:textColor="#a7a7a7"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
